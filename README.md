@@ -11,7 +11,7 @@ The purpose of creating this software is to demonstrate basic skills in C++....
 - **Code Editor**: VS Code
 - **Browser**: Chrome / Firefox
 - **File System**: Local
-- **Operating System**: (e.g., Windows 10 / macOS / Linux)
+- **Operating System**: (e.g., Windows 11/ macOS / Linux)
 
 # Programming Languages Used
 
