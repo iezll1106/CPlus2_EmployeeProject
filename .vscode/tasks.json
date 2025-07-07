@@ -2,32 +2,41 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build and Run in Terminal",
+      "label": "Build and Run (PowerShell)",
       "type": "shell",
-      "command": "/c/msys64/ucrt64/bin/g++.exe",
+      "command": "g++",
       "args": [
         "-g",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.exe",
-        "&&",
-        "${fileDirname}/${fileBasenameNoExtension}.exe"
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
-        "shell": {
-          "executable": "C:\\msys64\\usr\\bin\\bash.exe",
-          "args": ["-c"]
-        }
+        "cwd": "${fileDirname}"
       },
-      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
       },
+      "problemMatcher": ["$gcc"],
       "presentation": {
         "echo": true,
         "reveal": "always",
         "focus": true,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Run Executable",
+      "type": "shell",
+      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
         "panel": "shared"
       }
     }
