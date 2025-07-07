@@ -25,3 +25,5 @@ Make a list of websites that you found helpful in this project
 * Compiling & Executing C++ Programs (VS Code) https://www.youtube.com/watch?v=m2FtsEvlmCA
 
 * Input and Output in C++ https://www.youtube.com/watch?v=1Wrc91mp980
+
+* How to Change C++ Standard in VS Code (Easy Guide) https://www.youtube.com/watch?v=EMxc-fElqJc 
