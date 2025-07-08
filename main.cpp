@@ -97,7 +97,6 @@ void editEmployee(vector<Employee>& employees) {
     cout << "Enter new Office (" << emp.office << "): "; getline(cin, emp.office);
     cout << "Enter new Date Started (" << emp.dateStart << "): "; getline(cin, emp.dateStart);
     cout << "Enter new Date Ended (" << emp.dateEnd << "): "; getline(cin, emp.dateEnd);
-
     cout << "Employee updated.\n";
 }
 
