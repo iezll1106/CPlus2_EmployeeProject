@@ -3,6 +3,8 @@
 #include <vector>
 #include <sstream>
 #include <string>
+#include <map>
+#include <algorithm>
 using namespace std;
 
 struct Employee {
@@ -115,6 +117,38 @@ void deleteEmployee(vector<Employee>& employees) {
     cout << "Employee deleted.\n";
 }
 
+// Generate a report of all employees
+void generateReport(const vector<Employee>& employees) {
+    int total = employees.size();
+    int males = 0, females = 0;
+    map<string, int> officeCount;
+    vector<string> activeEmployees;
+
+    for (const auto& emp : employees) {
+        if (emp.gender == "Male" || emp.gender == "male") males++;
+        else if (emp.gender == "Female" || emp.gender == "female") females++;
+
+        officeCount[emp.office]++;
+
+        if (emp.dateEnd == "Present" || emp.dateEnd.empty())
+            activeEmployees.push_back(emp.name);
+    }
+
+    cout << "\n--- Employee Report ---\n";
+    cout << "Total Employees: " << total << "\n";
+    cout << "Male: " << males << ", Female: " << females << "\n";
+
+    cout << "\nEmployees per Office:\n";
+    for (auto& pair : officeCount) {
+        cout << " - " << pair.first << ": " << pair.second << "\n";
+    }
+
+    cout << "\nCurrently Active Employees:\n";
+    for (const auto& name : activeEmployees) {
+        cout << " * " << name << "\n";
+    }
+}
+
 // Main program
 int main() {
     const string filename = "employees.csv";
@@ -127,7 +161,8 @@ int main() {
         cout << "2. List Employees\n";
         cout << "3. Edit Employee\n";
         cout << "4. Delete Employee\n";
-        cout << "5. Save and Exit\n";
+        cout << "5. Generate Report\n";
+        cout << "6. Save and Exit\n";
         cout << "Choice: ";
         cin >> choice;
 
@@ -136,7 +171,8 @@ int main() {
             case 2: listEmployees(employees); break;
             case 3: editEmployee(employees); break;
             case 4: deleteEmployee(employees); break;
-            case 5:
+            case 5: generateReport(employees); break;
+            case 6:
                 saveEmployees(employees, filename);
                 cout << "Data saved. Goodbye!\n";
                 return 0;
