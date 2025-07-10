@@ -4,8 +4,6 @@ In this Module01 "Employee Information System (Language – C++)" Module, This a
 
 The purpose of creating this software is to demonstrate basic skills in C++.
 
-[Software Demo Video](http://youtube.link.goes.here)
-
 # Development Environment
 
 - **Code Editor**: VS Code
