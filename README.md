@@ -2,7 +2,7 @@
 
 In this Module01 "Employee Information System (Language – C++)" Module, This application is a console-based C++ program that allows users to manage employee records, including personal and work-related details. This system will support functions like adding new employees, listing all employees, generating reports, and saving/loading data from a file.
 
-The purpose of creating this software is to demonstrate basic skills in C++.
+The purpose of creating this software is to demonstrate basic skills in C++ like it's installation, libraries like iostream (istream & ostream), string, and vector, and understand standard Input & Output Objects. 
 
 # Development Environment
 
