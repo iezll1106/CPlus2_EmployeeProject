@@ -16,6 +16,7 @@ The purpose of creating this software is to demonstrate basic skills in C++ like
 - **C++**
 
 Make a list of websites that you found helpful in this project
+
 * Visual Studio Code (Using GCC with MinGW) https://code.visualstudio.com/docs/cpp/config-mingw
 
 * C++ in VS Code: A Quick Guide https://www.youtube.com/watch?v=qeEcV6u1kV4
