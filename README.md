@@ -18,11 +18,13 @@ The purpose of creating this software is to demonstrate basic skills in C++ like
 Make a list of websites that you found helpful in this project
 
 * Visual Studio Code (Using GCC with MinGW) https://code.visualstudio.com/docs/cpp/config-mingw
-
 * C++ in VS Code: A Quick Guide https://www.youtube.com/watch?v=qeEcV6u1kV4
-
 * Compiling & Executing C++ Programs (VS Code) https://www.youtube.com/watch?v=m2FtsEvlmCA
-
 * Input and Output in C++ https://www.youtube.com/watch?v=1Wrc91mp980
-
 * How to Change C++ Standard in VS Code (Easy Guide) https://www.youtube.com/watch?v=EMxc-fElqJc 
+
+# Future Work
+
+{Make a list of things that you need to fix, improve, and add in the future.}
+- Normalize Gender Comparison (Case-Insensitive) - to avoid isuues like "MALE or "FEMALE" not being counted
+- Trim Whitespace (Optional but Useful)
